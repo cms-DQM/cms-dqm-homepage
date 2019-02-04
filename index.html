@@ -11,64 +11,27 @@
             media="screen"
             href="style.css"
         />
-        <script src="main.js"></script>
     </head>
     <body>
-        <div class="center">
-            <h1 class="main_title">Welcome to CMS DQM HOMEPAGE</h1>
-            <h2>A collection of useful links for DQM:</h2>
-
-            <ul>
-                <li>
-                    <h3>Run Registry</h3>
-                    <ul>
-                        <li>
-                            New Run Registry
-                            <a href="https://cmsrunregistry.web.cern.ch/"
-                                >[Production version]</a
-                            >
-                            <a href="https://dev-cmsrunregistry.web.cern.ch/"
-                                >[Staging version]</a
-                            >
-                        </li>
-                        <li>
-                            Old Run Registry
-                            <a
-                                href="https://cmsrunregistry.cern.ch/runregistry/index.jsf"
-                                >[Online]</a
-                            >
-                            <a
-                                href="https://cmswbmoffshift.web.cern.ch/cmswbmoffshift/runregistry_offline/"
-                                >[Offline]</a
-                            >
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>DQM GUI</h3>
-                    <ul>
-                        <li>
-                            DQM GUI
-                            <a href="https://cmsweb.cern.ch/dqm/online/"
-                                >[Online]</a
-                            >
-                            <a href="https://cmsweb.cern.ch/dqm/offline/"
-                                >[Offline]</a
-                            >
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Meetings</h3>
-                    <ul>
-                        <li>
-                            <a href="https://indico.cern.ch/category/3904/"
-                                >PPD DQM Meetings</a
-                            >
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+        <h1 class="main_title">Welcome to CMS DQM Homepage</h1>
+        <div class="content">
+            <div class="links">
+                <h2>A collection of useful links for DQM:</h2>
+                <ul id="link_list"></ul>
+            </div>
+            <div class="run_number">
+                <div>
+                    <h2>Run number dependent services</h2>
+                    <label for="run_number">Please enter a run number:</label>
+                    <input id="run_number" type="text" />
+                    <button>Go</button>
+                </div>
+                <div class="result">
+                    <ul id="run_number_dependent_services"></ul>
+                </div>
+            </div>
         </div>
     </body>
+    <script type="text/javascript" src="config.js"></script>
+    <script src="main.js"></script>
 </html>

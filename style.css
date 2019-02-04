@@ -4,5 +4,21 @@
 }
 
 .main_title {
-    margin-left: -50px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.links {
+    padding: 5px 40px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+.run_number {
+    padding: 5px 40px;
+    width: 500px;
 }
