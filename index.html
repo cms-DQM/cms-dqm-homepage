@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>CMS DQM HOMEPAGE</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="foundation.min.css" />
         <link
             rel="stylesheet"
             type="text/css"
@@ -13,10 +14,11 @@
         />
     </head>
     <body>
-        <h1 class="main_title">Welcome to CMS DQM Homepage</h1>
+        <h1 class="main_title">CMS DQM Homepage</h1>
+        <hr />
         <div class="content">
             <div class="links">
-                <h2>A collection of useful links for DQM:</h2>
+                <h4>A collection of useful links for DQM:</h4>
                 <ul id="link_list"></ul>
                 <span
                     >You can add more links by making a pull request
@@ -27,10 +29,9 @@
             </div>
             <div class="run_number">
                 <div>
-                    <h2>Run number dependent services</h2>
+                    <h4>Run number dependent services</h4>
                     <label for="run_number">Please enter a run number:</label>
                     <input id="run_number" type="text" />
-                    <button>Go</button>
                 </div>
                 <div class="result">
                     <ul id="run_number_dependent_services"></ul>

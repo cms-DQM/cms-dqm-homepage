@@ -3,7 +3,7 @@ const link_list = document.querySelector('#link_list');
 for (let [key, val] of Object.entries(config)) {
     key = key.split('_').join(' ');
     const service = document.createElement('li');
-    const service_title = document.createElement('h3');
+    const service_title = document.createElement('h6');
     const service_title_node = document.createTextNode(key);
 
     service_title.appendChild(service_title_node);
@@ -51,8 +51,11 @@ function fill_services(array) {
 
 const run_number_input = document.querySelector('#run_number');
 run_number_input.addEventListener('keyup', event => {
-    if (event.key === 'Enter') {
-        const run_number = event.target.value;
+    // Remove previous elements
+    document.querySelector('#run_number_dependent_services').innerHTML = '';
+
+    const run_number = event.target.value;
+    if (run_number.length > 0) {
         const list = document.querySelector('#run_number_dependent_services');
         for (const [key, category] of Object.entries(config)) {
             category.forEach(({ id, links }) => {

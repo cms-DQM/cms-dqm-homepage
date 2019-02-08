@@ -12,6 +12,21 @@
     justify-content: center;
 }
 
+#link_list {
+    list-style: none;
+    font-size: 0.9em;
+}
+
+#link_list h6 {
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#link_list ul {
+    list-style: none;
+}
+
 .links {
     padding: 5px 40px;
     border-right: 1px solid rgba(0, 0, 0, 0.1);

@@ -37,7 +37,7 @@ const config = {
                     name: 'Prod Offline',
                     link: 'https://cmsrunregistry.web.cern.ch',
                     run_link: run_number =>
-                        `/online/runs/all?run_number=${run_number}`
+                        `/offline/workspaces/global?run_number=${run_number}`
                 },
                 {
                     name: 'Staging',
