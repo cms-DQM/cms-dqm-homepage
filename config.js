@@ -17,7 +17,7 @@ const config = {
     ],
     Twiki: [
         {
-            id: 'CMS_Twiki',
+            id: 'DQM_Main_Twiki',
             links: [
                 { link: 'https://twiki.cern.ch/twiki/bin/viewauth/CMS/DQM' }
             ]
@@ -42,6 +42,10 @@ const config = {
                 {
                     name: 'Staging',
                     link: 'https://dev-cmsrunregistry.web.cern.ch'
+                },
+                {
+                    name: 'New RR Twiki',
+                    link: 'https://twiki.cern.ch/twiki/bin/viewauth/CMS/DQMRunRegistry2018'
                 }
             ]
         },
