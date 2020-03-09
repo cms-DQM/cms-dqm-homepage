@@ -49,6 +49,13 @@ const config = {
       ]
     }
   ],
+  Historic_DQM: [
+    {
+      id: 'Historic_DQM',
+      links: [{ link: 'https://cms-hdqm.web.cern.ch/' }
+      ]
+    }
+  ],
   Meetings: [
     {
       id: 'DQM_Meetings',
