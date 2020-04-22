@@ -42,6 +42,12 @@ const config = {
   ],
   DQM_GUI: [
     {
+      id: 'NEW_DQM_GUI_(beta)',
+      links: [
+        { name: 'Offline', link: 'https://dqm-gui.web.cern.ch'}
+      ]
+    },
+    {
       id: 'DQM_GUI',
       links: [
         { name: 'Online', link: 'https://cmsweb.cern.ch/dqm/online' },
