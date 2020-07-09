@@ -124,8 +124,8 @@ const config = {
       links: [
         {
           name: 'OMS',
-          link: 'https://cmsoms.cern.ch/cms/index/index',
-          run_link: (run_number) => `?cms_run=${run_number}`,
+          link: 'https://cmsoms.cern.ch',
+          run_link: (run_number) => `/cms/runs/report?cms_run=${run_number}`,
         },
       ],
     },
