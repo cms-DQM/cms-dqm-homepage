@@ -57,7 +57,7 @@ const config = {
     {
       id: 'DQM_GUI',
       links: [
-        { name: 'Online', link: 'https://cmsweb.cern.ch/dqm/online', run_link: (run_number) => `https://cmsweb.cern.ch/dqm/online/start?runnr=${run_number};dataset=/Global/Online/ALL;sampletype=online_data;workspace=Everything` },
+        { name: 'Online', link: 'https://cmsweb.cern.ch/dqm/online', run_link: (run_number) => `/start?runnr=${run_number};dataset=/Global/Online/ALL;sampletype=online_data;workspace=Everything` },
         {
           name: 'offline_gui',
           link: 'https://cmsweb.cern.ch/dqm/offline',
