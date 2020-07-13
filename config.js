@@ -83,7 +83,7 @@ const config = {
       links: [{ link: 'https://indico.cern.ch/category/3904/' }],
     },
     {
-      id: 'Run_Meetings',
+      id: 'Daily_Run_Meetings',
       links: [{ link: 'https://indico.cern.ch/event/402363' }],
     },
   ],
