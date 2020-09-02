@@ -44,7 +44,7 @@ const config = {
   ],
   DQM_GUI: [
     {
-      id: 'NEW_DQM_GUI_(beta)',
+      id: 'NEW_DQM_GUI_(beta)_ONLY_OFFLINE',
       links: [
         {
           name: 'Offline',
