@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>CMS DQM HOMEPAGE</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="foundation.min.css" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            media="screen"
-            href="style.css"
-        />
-    </head>
-    <body>
-        <h1 class="main_title">CMS DQM Homepage</h1>
-        <hr />
-        <div class="content">
-            <div class="links">
-                <h4>A collection of useful links for DQM:</h4>
-                <ul id="link_list"></ul>
-                <span
-                    >You can add more links by making a pull request
-                    <a href="https://github.com/cms-DQM/cms-dqm-homepage"
-                        >here.</a
-                    ></span
-                >
-            </div>
-            <div class="run_number">
-                <div>
-                    <h4>Run number dependent services</h4>
-                    <label for="run_number">Please enter a run number:</label>
-                    <input id="run_number" type="text" />
-                </div>
-                <div class="result">
-                    <ul id="run_number_dependent_services"></ul>
-                </div>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CMS DQM HOMEPAGE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="foundation.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <h1 class="main_title">CMS DQM Homepage</h1>
+    <hr />
+    <div class="content">
+      <div class="external_links">
+        <h4>External Links</h4>
+        <ul id="external_links"></ul>
+      </div>
+      <div class="links">
+        <h4>DQM Links:</h4>
+        <ul id="link_list"></ul>
+        <span
+          >You can add more links by making a pull request
+          <a href="https://github.com/cms-DQM/cms-dqm-homepage">here.</a></span
+        >
+      </div>
+      <div class="run_number">
+        <div>
+          <h4>Run number dependent services</h4>
+          <label for="run_number">Please enter a run number:</label>
+          <input id="run_number" type="text" />
         </div>
-    </body>
-    <script type="text/javascript" src="config.js"></script>
-    <script src="main.js"></script>
+        <div class="result">
+          <ul id="run_number_dependent_services"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="config.js"></script>
+  <script src="main.js"></script>
 </html>
