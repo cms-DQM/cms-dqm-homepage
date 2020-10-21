@@ -4,10 +4,6 @@ const config = {
   external: {
     Meetings: [
       {
-        id: 'DQM_Meetings',
-        links: [{ link: 'https://indico.cern.ch/category/3904/' }],
-      },
-      {
         id: 'Daily_Run_Meetings',
         links: [{ link: 'https://indico.cern.ch/event/402363' }],
       },
@@ -139,6 +135,12 @@ const config = {
             run_link: (run_number) => `?filter=list&filterValue=${run_number}`,
           },
         ],
+      },
+    ],
+    Meetings: [
+      {
+        id: 'DQM_Meetings',
+        links: [{ link: 'https://indico.cern.ch/category/3904/' }],
       },
     ],
   },
