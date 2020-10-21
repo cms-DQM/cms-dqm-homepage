@@ -12,18 +12,21 @@
   justify-content: center;
 }
 
-#link_list {
+#link_list,
+#external_links {
   list-style: none;
   font-size: 0.9em;
 }
 
-#link_list h6 {
+#link_list h6,
+#external_links h6 {
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 0px;
 }
 
-#link_list ul {
+#link_list ul,
+#external_links ul {
   list-style: none;
 }
 

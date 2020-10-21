@@ -4,17 +4,30 @@ const config = {
   external: {
     Meetings: [
       {
-        id: 'Daily_Run_Meetings',
-        links: [{ link: 'https://indico.cern.ch/event/402363' }],
+        id: 'PPD',
+        links: [{ link: 'https://indico.cern.ch/category/3877/' }],
+      },
+      {
+        id: 'Run_Coordination',
+        links: [{ link: 'https://indico.cern.ch/category/1354/' }],
       },
     ],
     Run_Coordination: [
       {
-        id: 'Run_Coordination',
+        id: 'Daily_meeting_report',
         links: [
           {
             link:
               'http://schwick.web.cern.ch/schwick/rctools/dailyReport/listReports/',
+          },
+        ],
+      },
+      {
+        id: 'Control_room_contact_list',
+        links: [
+          {
+            link:
+              'https://twiki.cern.ch/twiki/bin/view/CMS/OnlineWBContactList',
           },
         ],
       },
@@ -31,13 +44,26 @@ const config = {
         ],
       },
     ],
-    Elog: [
+    CMS_Online: [
+      {
+        id: 'CMS_Online',
+        links: [{ link: 'http://cmsonline.cern.ch/' }],
+      },
       {
         id: 'Elog',
         links: [
           {
             link:
               'https://cmsonline.cern.ch/webcenter/portal/cmsonline/pages_common/elog?__adfpwp_action_portlet=683379043&__adfpwp_backurl=https%3A%2F%2Fcmsonline.cern.ch%3A443%2Fwebcenter%2Fportal%2Fcmsonline%2Fpages_common%2Felog%3F_afrRedirect%3D9715040540107362%26__adfpwp_mode.623564097%3D1&_piref683379043.strutsAction=%2FviewSubcatMessages.do%3FcatId%3D493%26subId%3D20%26page%3D1',
+          },
+        ],
+      },
+      {
+        id: 'Shift_List_Tool',
+        links: [
+          {
+            link:
+              'https://cmsonline.cern.ch/webcenter/portal/cmsonline/pages_common/shiftlist',
           },
         ],
       },
@@ -99,8 +125,14 @@ const config = {
     ],
     DQM_GUI: [
       {
-        id: 'NEW_DQM_GUI_(beta)_ONLY_OFFLINE',
+        id: 'NEW_DQM_GUI_(beta)',
         links: [
+          {
+            name: 'Online',
+            link: 'https://cmsweb.cern.ch/dqm/online-new',
+            run_link: (run_number) =>
+              `?search_run_number=${run_number}&search_dataset_name=`,
+          },
           {
             name: 'Offline',
             link: 'https://dqm-gui.web.cern.ch',
@@ -119,7 +151,7 @@ const config = {
               `/start?runnr=${run_number};dataset=/Global/Online/ALL;sampletype=online_data;workspace=Everything`,
           },
           {
-            name: 'offline_gui',
+            name: 'Offline',
             link: 'https://cmsweb.cern.ch/dqm/offline',
           },
         ],
@@ -141,6 +173,14 @@ const config = {
       {
         id: 'DQM_Meetings',
         links: [{ link: 'https://indico.cern.ch/category/3904/' }],
+      },
+    ],
+    DQM_Contact: [
+      {
+        id: 'DQM_Contact_List',
+        links: [
+          { link: 'https://twiki.cern.ch/twiki/bin/view/CMS/DQMContacts' },
+        ],
       },
     ],
   },
