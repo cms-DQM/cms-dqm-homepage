@@ -183,5 +183,13 @@ const config = {
         ],
       },
     ],
+    DQM_Github_repo
+      {
+        id: 'DQM_Github_Repo',
+        links: [
+          { link: 'https://github.com/cms-DQM/' },
+        ],
+      },
+    ],
   },
 };
