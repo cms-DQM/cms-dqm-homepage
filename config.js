@@ -183,7 +183,7 @@ const config = {
         ],
       },
     ],
-    DQM_Github_repo
+    DQM_Github_repo: [
       {
         id: 'DQM_Github_Repo',
         links: [
