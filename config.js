@@ -129,7 +129,7 @@ const config = {
         links: [
           {
             name: 'Online',
-            link: 'https://cmsweb.cern.ch/dqm/online-new',
+            link: 'https://cmsweb.cern.ch/dqm/online-new/',
             run_link: (run_number) =>
               `?search_run_number=${run_number}&search_dataset_name=`,
           },
