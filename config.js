@@ -109,19 +109,6 @@ const config = {
           },
         ],
       },
-      {
-        id: 'Old_Run_Registry',
-        links: [
-          {
-            name: 'Online',
-            link: 'https://cmsrunregistry.cern.ch/runregistry/index.jsf',
-          },
-          {
-            name: 'Offline',
-            link: 'https://cmsrunregistry.cern.ch/runregistry_offline',
-          },
-        ],
-      },
     ],
     DQM_GUI: [
       {
