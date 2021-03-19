@@ -122,7 +122,7 @@ const config = {
           },
           {
             name: 'Offline',
-            link: 'https://dqm-gui.web.cern.ch',
+            link: 'https://cmsweb-testbed.cern.ch/dqm/offline-test-new/',
             run_link: (run_number) =>
               `?search_run_number=${run_number}&search_dataset_name=`,
           },
