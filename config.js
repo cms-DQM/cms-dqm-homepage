@@ -162,8 +162,8 @@ const config = {
         links: [
           {
             name: 'mDQM^2',
-            link: 'https://cmsweb.cern.ch/dqm/dqm-square',
-            run_link: (run_number) => `/tmp/content_parser_productionPARSER_run${run_number}`,
+            link: 'https://cmsweb.cern.ch/dqm/dqm-square/',
+            run_link: (run_number) => `tmp/content_parser_productionPARSER_run${run_number}`, 
           },
         ],
       },
