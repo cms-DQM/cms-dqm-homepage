@@ -161,13 +161,8 @@ const config = {
         id: 'DQM_Squared_Mirror',
         links: [
           {
-            name: 'DQM^2 Mirror@P5',
+            name: 'DQM^2 Mirror',
             link: 'https://cmsweb.cern.ch/dqm/dqm-square/',
-            run_link: (run_number) => `tmp/content_parser_productionPARSER_run${run_number}`, 
-          },
-          {
-            name: 'DQM^2 Mirror@CMSWEB k8s',
-            link: 'https://cmsweb.cern.ch/dqm/dqm-square-k8/',
             run_link: (run_number) => `?run=${run_number}&db=production`, 
           },
         ],
