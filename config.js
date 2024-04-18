@@ -184,6 +184,18 @@ const config = {
         ],
       },
     ],
+    DIALS: [
+      {
+        id: 'DIALS',
+        links: [
+          {
+            name: 'DIALS',
+            link: 'https://cmsdials.web.cern.ch/',
+            run_link: (run_number) => `/runs/${run_number}`, 
+          },
+        ],
+      },
+    ],
     Meetings: [
       {
         id: 'DQM_Meetings',
