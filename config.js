@@ -37,17 +37,17 @@ const config = {
         id: 'OMS',
         links: [
           {
-            name: 'OMS: Run report',
+            name: 'Run report',
             link: 'https://cmsoms.cern.ch',
             run_link: (run_number) => `/cms/runs/report?cms_run=${run_number}`,
           },
           {
-            name: 'OMS: HLT rates info',
+            name: 'HLT rates info',
             link: 'https://cmsoms.cern.ch',
             run_link: (run_number) => `/cms/triggers/hlt_trigger_rates?cms_run=${run_number}`,
           },
           {
-            name: 'OMS API: Lumisections info',
+            name: 'Lumisections info',
             link: 'https://cmsoms.cern.ch/agg/api/v1',
             run_link: (run_number) => `/lumisections?filter[run_number]=${run_number}&page[limit]=5000`,
           },
